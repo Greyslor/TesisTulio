@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Partidas.unity
     guid: fe9c693027d8255449ccc9ea91d3e146
   - enabled: 1
+    path: Assets/Scenes/Cinematica1.unity
+    guid: f6027340833c311449b3be74a02d555f
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 0eca2a52d0d0f9346a55f30e4c691baa
   m_configObjects: {}
