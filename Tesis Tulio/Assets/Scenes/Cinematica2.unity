@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 97729b08fd6779442903ae0aaf5381f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af0ae489a93a4f242b7f345cd18fcd4b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -779,35 +779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cinematicImage: {fileID: 23855008}
-  frames:
-  - {fileID: 21300000, guid: 97729b08fd6779442903ae0aaf5381f7, type: 3}
-  - {fileID: 21300000, guid: 53413a4f3b6e41b4d9d9f7c7648fff28, type: 3}
-  - {fileID: 21300000, guid: e64328f4119aa2a45b0f4d3be15d77bd, type: 3}
-  - {fileID: 21300000, guid: ae76bbcd137a1c54a9e5a2dba9282615, type: 3}
-  - {fileID: 21300000, guid: d1fd5d22fa78e584090b0c647fb5e40e, type: 3}
-  - {fileID: 21300000, guid: 4ed5de56137fe764194352feeffc3588, type: 3}
-  - {fileID: 21300000, guid: cc1f2e237e1f0ab4291cd29aef512394, type: 3}
-  - {fileID: 21300000, guid: 043d3ee2737fa724689e29864078933e, type: 3}
-  - {fileID: 21300000, guid: f26cf142417d2134e9f3f9bb2d2fb8c0, type: 3}
-  - {fileID: 21300000, guid: dbfced2d9bd43f64fb67b4a102ca2d1a, type: 3}
-  - {fileID: 21300000, guid: 43134176062c1004994287ab8b4f8725, type: 3}
-  - {fileID: 21300000, guid: 809365a29073da248a8f75dec3d41418, type: 3}
-  - {fileID: 21300000, guid: 5ef7a5a49a59051458e7a9707c071d4f, type: 3}
-  - {fileID: 21300000, guid: e700fc6a4385077489f35b5ac2114023, type: 3}
-  - {fileID: 21300000, guid: 40ed7263f2a65b140bdcdbf3f2c929e4, type: 3}
-  - {fileID: 21300000, guid: 44b1a714e084a834cbebcd68457827b6, type: 3}
-  - {fileID: 21300000, guid: e28e3bf5bd2e5874a997e487d13c4c1c, type: 3}
-  - {fileID: 21300000, guid: d4723ead00656da47afcdf41d66496e7, type: 3}
-  - {fileID: 21300000, guid: 162c1b576f14a7947b4902c4d36d0b0a, type: 3}
-  - {fileID: 21300000, guid: 1dac88da449e8ab4d97431bec2bda021, type: 3}
-  - {fileID: 21300000, guid: eb61bab40aa26a24ea2a2a1228ecf4e0, type: 3}
-  - {fileID: 21300000, guid: 0cf89460179a5cc4b88e266bc9fb7e75, type: 3}
-  - {fileID: 21300000, guid: 67e250cb08caebb47a7b7c0757041349, type: 3}
-  - {fileID: 21300000, guid: 0cca3e6d68a97794cac462eedd7adb73, type: 3}
-  - {fileID: 21300000, guid: d3a931267ca33e44f80b3bef1809d844, type: 3}
-  - {fileID: 21300000, guid: 29c1a429923ea434cbde9b34aa5948e4, type: 3}
-  - {fileID: 21300000, guid: 22add4d0e5ccd1b4db95036f9abb8259, type: 3}
-  - {fileID: 21300000, guid: 5d0fe534e6a6ad04496bcea1ab532ce1, type: 3}
+  frames: []
   frameDuration: 5
   nextScene: GameScene
 --- !u!1 &1466256973
