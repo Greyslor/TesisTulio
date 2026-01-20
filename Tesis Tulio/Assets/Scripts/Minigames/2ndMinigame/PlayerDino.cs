@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerDino : MonoBehaviour
 {
+    [SerializeField] private float upForce;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float radius;
+    [SerializeField] private LayerMask ground;
     private Rigidbody2D rb;
     bool isJumping = false;
 
@@ -12,11 +16,13 @@ public class PlayerDino : MonoBehaviour
     public ManagerDino gameManager;
 
     private AudioSource jumpSound;
+    private Animator dinoAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        dinoAnimator = GetComponent<Animator>();
         jumpSound = GetComponent<AudioSource>();
 
         QualitySettings.vSyncCount = 1;
@@ -27,11 +33,17 @@ public class PlayerDino : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, radius, ground);
+        dinoAnimator.SetBool("IsGrounded", isGrounded);
+
         if (Input.GetKey("space") && isJumping == false)
         {
-            rb.velocity = new Vector3(0, 20, 0);
-            isJumping = true;
-            jumpSound.Play();
+            if (isGrounded) 
+            {
+                rb.AddForce(Vector2.up * upForce);
+                isJumping = true;
+                //jumpSound.Play();
+            }
         }
 
         if (Input.GetKey("down") && isJumping == false)
@@ -45,6 +57,10 @@ public class PlayerDino : MonoBehaviour
         isJumping = false;
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(groundCheck.position, radius);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("obstacle"))
